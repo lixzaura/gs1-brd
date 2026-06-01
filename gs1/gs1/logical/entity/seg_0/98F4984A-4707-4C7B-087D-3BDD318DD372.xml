@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98F4984A-4707-4C7B-087D-3BDD318DD372" name="TB_RELATORIO">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:23:08 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_relatorio " id="64A86983-14D9-363E-CE7F-7AEAD5F081A1">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:23:17 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulo_relatorio" id="F24C53B3-EDA6-1398-8491-A27C6D33DAEE">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:25:54 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao_relatorio" id="A8F79DB9-6112-8FF4-E1C6-028DC42CD0B3">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:26:01 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_emissao" id="8F95C863-8AEF-2CC0-7F95-1B96234FE1AB">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:26:11 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_relatorio" id="FB3DAB60-0022-D9EF-2FA8-7AD42DF544C8">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:26:19 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usuario_id" id="16CF1D25-9A06-4588-16E0-0C6F7932FBB2">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:26:37 UTC</createdTime>
+<generatorID>C78A0638-CB96-4F71-6A71-8196A1BDD045</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<referedAttribute>7FE60A45-F20A-C81F-72A8-D0854BF0CC83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objeto_id" id="9E3F4DF5-6580-82F1-20DD-B371B5BDAF77">
+<createdBy>wspot</createdBy>
+<createdTime>2026-05-29 20:18:30 UTC</createdTime>
+<generatorID>872AC041-ADD6-2587-978D-FDAFB65B92FB</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<referedAttribute>933EEA41-8034-17E0-5B7F-1BB924320146</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F2E6057B-751F-2E6E-8758-FBD04037BAD2" name="TB_RELATORIO PK">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:23:36 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>64A86983-14D9-363E-CE7F-7AEAD5F081A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

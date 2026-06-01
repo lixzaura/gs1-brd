@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05639F05-0218-2440-276B-23E80F0AE8A3" name="TB_SCORE">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:07:47 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="score_id" id="10336697-0165-8A30-0946-8FF2D662234B">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:08:27 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="penalidade" id="7AA6F7EB-046E-8005-1A68-994080A97169">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:14:25 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bonificacao" id="CFA045BB-3091-038B-39EC-86A6F5B1D38B">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:15:47 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_id" id="C38EC8C2-E238-E472-EB99-7FC8A7C84ACB">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:16:00 UTC</createdTime>
+<generatorID>D278C873-AC02-51C8-F7C5-B0C9A7F96667</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<referedAttribute>D6CFFF05-B802-E2B4-81D1-0FCF7B12528F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="satelite_id" id="16E605B8-767D-C85B-8C34-1797CB680B75">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:16:05 UTC</createdTime>
+<generatorID>681FF57E-C6DB-DBEF-D7CF-F16FD52CADBD</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<referedAttribute>923651DC-C94C-8A97-EE2C-2AA159B248CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE669F61-37CF-3201-13FD-CB9C24FDF738" name="TB_SCORE PK">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:11:48 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>10336697-0165-8A30-0946-8FF2D662234B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
