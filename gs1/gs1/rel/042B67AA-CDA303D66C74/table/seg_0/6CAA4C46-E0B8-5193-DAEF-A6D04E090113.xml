@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CAA4C46-E0B8-5193-DAEF-A6D04E090113" name="TB_RELATORIO">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>98F4984A-4707-4C7B-087D-3BDD318DD372</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_relatorio" id="A9E5F0A5-0EB1-978B-2ED6-3DC33AF0505C">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>64A86983-14D9-363E-CE7F-7AEAD5F081A1</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_USUARIO_usuario_id" id="56C37305-49B5-0BF2-DDD1-083AB4C775CE">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>16CF1D25-9A06-4588-16E0-0C6F7932FBB2</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23C7380E-D2D4-A62A-327D-74B0EAC9F27C" referredColumn="9124B776-EADB-FC96-6A85-1C5565229DFB"/>
+</associations>
+</Column>
+<Column name="TB_OBJETO_objeto_id" id="0448E54D-DFDC-8ECA-2D05-2D5325C4CB20">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>9E3F4DF5-6580-82F1-20DD-B371B5BDAF77</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81A2BB6D-D2F2-3028-F9D9-4B242ED7264C" referredColumn="E6C964B6-8594-9C21-ABDB-89DF5C847C13"/>
+</associations>
+</Column>
+<Column name="titulo_relatorio" id="15C92C67-4745-11BF-FC78-BAE5943EAB41">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>F24C53B3-EDA6-1398-8491-A27C6D33DAEE</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_relatorio" id="3AAA707E-4EC8-8E98-8DBE-8FC44EBA8FA3">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>A8F79DB9-6112-8FF4-E1C6-028DC42CD0B3</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_relatorio" id="BB04767E-E106-F4A7-53EC-6B23B3A7FAF6">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>FB3DAB60-0022-D9EF-2FA8-7AD42DF544C8</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_emissao" id="FB2FE8E4-AB9A-0AF1-26D2-78E2DA770C44">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>8F95C863-8AEF-2CC0-7F95-1B96234FE1AB</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD4DD90B-598A-ED15-461C-83ECC45F94CE" name="TB_RELATORIO_PK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>F2E6057B-751F-2E6E-8758-FBD04037BAD2</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9E5F0A5-0EB1-978B-2ED6-3DC33AF0505C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E46FF98-9F9E-325C-E035-139956AF2609" name="TB_RELATORIO_TB_OBJETO_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>872AC041-ADD6-2587-978D-FDAFB65B92FB</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0448E54D-DFDC-8ECA-2D05-2D5325C4CB20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB3BCD12-2377-9008-EEFC-7973845C63BD" name="TB_RELATORIO_TB_USUARIO_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>C78A0638-CB96-4F71-6A71-8196A1BDD045</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56C37305-49B5-0BF2-DDD1-083AB4C775CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

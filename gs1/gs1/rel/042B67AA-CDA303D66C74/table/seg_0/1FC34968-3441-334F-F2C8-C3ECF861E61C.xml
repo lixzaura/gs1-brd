@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FC34968-3441-334F-F2C8-C3ECF861E61C" name="TB_SATELITE">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>5D75247A-0083-3D16-4A02-84A71C57BB80</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="satelite_id" id="228CF1B1-2D49-789F-AE19-15C1F3E87012">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>923651DC-C94C-8A97-EE2C-2AA159B248CA</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="finalidade" id="CDA58A04-6960-694F-D7B1-8BD042B92ACA">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>CF282E87-5B6D-82BC-0DDF-4AADFE56CBFE</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trajeto" id="84356CE9-9F87-0279-CFAC-EAB2ABB6EF6E">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>8991DCCA-0B71-5C52-94AC-8281C2E1D526</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_orbita" id="07847788-6F54-440B-93E9-5B751E0FCB4B">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>D1485F3B-1CC2-2FBA-B39C-A6EF70FE04FB</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Alta" description=""/>
+<valueDef value="Baixa" description=""/>
+<valueDef value="Geoestacionária" description=""/>
+<valueDef value="Média" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_operacao" id="DE0958B1-B00A-4187-8E5A-8C468F9C96BE">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>1FD05BD4-11C5-F9B5-6A76-423DAD6E1D2F</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Ativo" description=""/>
+<valueDef value="Inativo" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_lancamento" id="A0B84384-1B2D-7736-5948-1FBF4B1112B9">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>2A7E6A02-21B0-0500-0C32-B3E3DD21EC29</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tempo_de_vida" id="7B77F996-58BF-B01D-01CF-1877D24B7586">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>11FFDC21-A7C5-21CB-E137-D005693CD097</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_EMPRESA_empresa_id" id="A26A66E7-F89B-CA7D-A742-0B79CDA145B2">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>3CCF4091-28BD-5DE9-D98D-E54AEA4E20E6</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90345C66-245C-7B14-8C45-047E1FCE88BB" referredColumn="95C556DD-8D05-1080-9796-0F879658BF65"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30E4537A-34AF-234B-0AC9-9306DA276B7C" name="TB_SATELITE_PK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>D509EF6E-31F1-5894-8ADF-600DF307AD29</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="228CF1B1-2D49-789F-AE19-15C1F3E87012"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99B72697-7AE4-2E47-EE3C-0DB373EEF72B" name="TB_SATELITE_TB_EMPRESA_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>620F5F13-EBBA-6808-EAD1-694090D3BCE0</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A26A66E7-F89B-CA7D-A742-0B79CDA145B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -27,6 +27,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="satelite_id" id="651B645C-193E-7CE7-E406-EEA2E2F6A958">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:27:41 UTC</createdTime>
+<generatorID>92B35719-5F5A-A505-8150-299635DCCA88</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<referedAttribute>923651DC-C94C-8A97-EE2C-2AA159B248CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nome_objeto" id="51B9440D-8596-14E2-2221-C19F2057B12F">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 00:59:51 UTC</createdTime>
@@ -79,9 +93,42 @@
 <defaultValue>Rastreado</defaultValue>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="risco_colisao" id="030E821C-59CF-8729-7C4F-AB8904109B00">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:03:31 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Alta" description=""/>
+<valueDef value="Baixa" description=""/>
+<valueDef value="Média" description=""/>
+<valueDef value="Nula" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="tamanho" id="FF850004-2816-B90C-C05A-9C786A356734">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:02:25 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="altitude_orbital" id="C2CBEF07-8A70-5DF8-C027-C88556D3C7A5">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:03:00 UTC</createdTime>
 <ownerDesignName>gs1</ownerDesignName>
 <engineerTo>
 <item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
@@ -106,39 +153,6 @@
 <dataTypePrecision>8</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,8,4</ownDataTypeParameters>
-</Attribute>
-<Attribute name="altitude_orbital" id="C2CBEF07-8A70-5DF8-C027-C88556D3C7A5">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 01:03:00 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,10,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="risco_colisao" id="030E821C-59CF-8729-7C4F-AB8904109B00">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 01:03:31 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<listOfValues>
-<valueDef value="Alta" description=""/>
-<valueDef value="Baixa" description=""/>
-<valueDef value="Média" description=""/>
-<valueDef value="Nula" description=""/>
-</listOfValues>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_registro" id="B94CBEF7-C028-EC61-F9EE-37CF6B1A2DFA">
 <createdBy>julia</createdBy>

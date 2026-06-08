@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B85C68B-7FFD-151A-C425-0F498B8E7109" containerWithKeyObject="032D8464-2885-B617-7988-54254640E3D7" localFKIndex="74478BB3-2391-F22E-A56F-22DACB78BDD2" name="TB_EMPRESA_INICIATIVA_TB_INICIATIVA_ESPACIAL_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>13289D87-8A9C-DC9A-567A-765C2EDD9C45</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<referredTableLongName>TB_INICIATIVA_ESPACIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2AC74C7-BFF4-BEFD-EE06-70E5E765AFDB</referredTableID>
+<keyObject>5D01F513-33E5-05E9-7A3E-271DE6CBF18C</keyObject>
+<referredKeyID>5D01F513-33E5-05E9-7A3E-271DE6CBF18C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>iniciativa__id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

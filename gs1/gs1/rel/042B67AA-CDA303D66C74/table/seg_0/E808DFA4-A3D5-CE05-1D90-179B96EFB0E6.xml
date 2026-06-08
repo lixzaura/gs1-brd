@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E808DFA4-A3D5-CE05-1D90-179B96EFB0E6" name="TB_EMPRESA">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>A20D1763-5CC0-26DC-CC34-A82ACCC4A769</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="empresa_id" id="95C556DD-8D05-1080-9796-0F879658BF65">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>D6CFFF05-B802-E2B4-81D1-0FCF7B12528F</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="B2EAA49B-E080-7708-D28D-C747E62087A6">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>A770728A-8AE7-F3CB-CB5A-45A9A9041692</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="site_oficial" id="C30A5B12-3AEB-8CAC-4DD0-5DE1507170A6">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>485BD92C-2A32-C6B2-C77B-11570387273B</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>350</dataTypeSize>
+<ownDataTypeParameters>350,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_empresa" id="D81DAFE9-9160-92B0-5449-17BB51CB58DE">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>FDE1F7C6-F691-8FEC-79BD-1D3ED6008C1D</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_empresa" id="454986E2-5571-6A68-BD01-8AE5C4465C32">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>20E8CD4C-9680-1FEF-7062-EF382B97E857</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pais_origem" id="81D69B6B-3F1F-FCB9-2AFB-764971015C31">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>EF395856-ECD3-ECFD-0EB7-2751048B7AFB</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_empresa" id="68E83684-2CDD-FE71-30A0-DDCDB3D6FB32">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>C6554A60-FECF-7AC0-6D75-9D0E71AD9402</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_empresa" id="A0C5FC7A-8A9E-AD14-7B98-A922DF209796">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>02F89693-3457-B34E-3AD9-0B13E00EB077</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Confiável" description=""/>
+<valueDef value="Em Análise" description=""/>
+<valueDef value="Não confiável" description=""/>
+<valueDef value="Suspeita" description=""/>
+</listOfValues>
+<defaultValue>Em Análise</defaultValue>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="E41CB2FB-5B70-BC5D-55FC-A6111A314F90">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>91EA1E14-64E1-613F-D946-DE2FCF94D0C7</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpnj" id="62294367-DEA8-499E-97E8-4CD81E898D2C">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>F9DA0BDE-BE1D-C786-ACF3-A187CA9EB7B1</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_fundacao" id="2EA65A3F-ABF7-FBFB-DE01-6E82B0511528">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>D8822062-116A-F142-AA39-6D7697F91E36</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDDC57C9-9A13-1F98-5C07-86D2AB647306" name="TB_EMPRESA_PK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>74790A1B-E24D-800E-C8D6-1E5AAB434BC1</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95C556DD-8D05-1080-9796-0F879658BF65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

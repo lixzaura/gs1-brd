@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="032D8464-2885-B617-7988-54254640E3D7" name="TB_EMPRESA_INICIATIVA">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>7CF98FB9-56EA-FFCF-A781-5341CA9FC87F</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="empresa_id" id="30640942-47B1-50F3-4DD0-AC82474739AF">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>68E2A9D3-8DB2-9B11-ABFF-1498EDA8F8A9</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D735689-A235-888D-DC37-5E2A9EBE47E8" referredColumn="95C556DD-8D05-1080-9796-0F879658BF65"/>
+</associations>
+</Column>
+<Column name="iniciativa_id" id="D5319C36-19C4-0D29-355F-70ADE2C34827">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>99D23C50-B493-244C-DD3D-46A9785C8B1F</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B85C68B-7FFD-151A-C425-0F498B8E7109" referredColumn="6BB23B4D-1961-2579-76F1-318223A820CF"/>
+</associations>
+</Column>
+<Column name="data_registro" id="C89D7DEF-01CB-5597-0FC9-FF837BC53644">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-07 21:30:55 UTC</createdTime>
+<generatorID>5B3344BF-4038-0B30-8376-4259310B0C3D</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="176E6B14-3B8B-3AF2-3ED9-9FF4FDF41A97" name="TB_EMPRESA_INICIATIVA_PK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:39:31 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30640942-47B1-50F3-4DD0-AC82474739AF"/>
+<colUsage columnID="D5319C36-19C4-0D29-355F-70ADE2C34827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F6FC356-5F77-DE14-038F-573BCEF17516" name="TB_EMPRESA_INICIATIVA_TB_EMPRESA_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>385B498A-7E52-1230-98B6-5238E74C2A0C</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30640942-47B1-50F3-4DD0-AC82474739AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74478BB3-2391-F22E-A56F-22DACB78BDD2" name="TB_EMPRESA_INICIATIVA_TB_INICIATIVA_ESPACIAL_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>13289D87-8A9C-DC9A-567A-765C2EDD9C45</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5319C36-19C4-0D29-355F-70ADE2C34827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="90345C66-245C-7B14-8C45-047E1FCE88BB" containerWithKeyObject="1FC34968-3441-334F-F2C8-C3ECF861E61C" localFKIndex="99B72697-7AE4-2E47-EE3C-0DB373EEF72B" name="TB_SATELITE_TB_EMPRESA_FK">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:32:26 UTC</createdTime>
+<generatorID>620F5F13-EBBA-6808-EAD1-694090D3BCE0</generatorID>
+<ownerDesignName>gs1</ownerDesignName>
+<referredTableLongName>TB_EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E808DFA4-A3D5-CE05-1D90-179B96EFB0E6</referredTableID>
+<keyObject>EDDC57C9-9A13-1F98-5C07-86D2AB647306</keyObject>
+<referredKeyID>EDDC57C9-9A13-1F98-5C07-86D2AB647306</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>empresa_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -27,32 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="penalidade" id="7AA6F7EB-046E-8005-1A68-994080A97169">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 01:14:25 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="bonificacao" id="CFA045BB-3091-038B-39EC-86A6F5B1D38B">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 01:15:47 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="empresa_id" id="C38EC8C2-E238-E472-EB99-7FC8A7C84ACB">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:16:00 UTC</createdTime>
@@ -67,18 +41,54 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="satelite_id" id="16E605B8-767D-C85B-8C34-1797CB680B75">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 01:16:05 UTC</createdTime>
-<generatorID>681FF57E-C6DB-DBEF-D7CF-F16FD52CADBD</generatorID>
+<Attribute name="pontos_score" id="C311009E-6C3C-78EE-F70B-26FDD0D2C14C">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:25:39 UTC</createdTime>
 <ownerDesignName>gs1</ownerDesignName>
 <engineerTo>
 <item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
 </engineerTo>
-<referedAttribute>923651DC-C94C-8A97-EE2C-2AA159B248CA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricacao_acao" id="CFA045BB-3091-038B-39EC-86A6F5B1D38B">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:15:47 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_acao" id="7AA6F7EB-046E-8005-1A68-994080A97169">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:14:25 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_score" id="02451E65-67E0-6E0C-1357-4C840EB3B1D1">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:25:41 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

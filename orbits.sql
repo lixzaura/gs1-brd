@@ -6,56 +6,68 @@ CREATE TABLE TB_USUARIO (
     telefone      VARCHAR(20)  NOT NULL,
     senha         VARCHAR(150) NOT NULL,
     data_cadastro DATE         NOT NULL,
-    CONSTRAINT TB_USUARIO_PK PRIMARY  KEY (usuario_id),
-    CONSTRAINT TB_USUARIO_EMAIL_UK    UNIQUE (email_usuario),
-    CONSTRAINT TB_USUARIO_TELEFONE_UK UNIQUE (telefone)
+    tipo_usuario  VARCHAR(20)  NOT NULL,
+    CONSTRAINT TB_USUARIO_PK 
+        PRIMARY  KEY (usuario_id),
+    CONSTRAINT TB_USUARIO_EMAIL_UK    
+        UNIQUE (email_usuario),
+    CONSTRAINT TB_USUARIO_TELEFONE_UK 
+        UNIQUE (telefone),
+    CONSTRAINT TB_USUARIO_TIPO_CK
+        CHECK (tipo_usuario IN ('comum', 'administrador'))
 );
 
-DROP TABLE TB_USUARIO
-
 CREATE TABLE TB_OBJETO (
-    objeto_id        INTEGER       GENERATED ALWAYS AS IDENTITY,
-    nome_objeto      VARCHAR(50)   NOT NULL,
-    categoria_objeto VARCHAR(50)   NOT NULL,
-    status_objeto    VARCHAR(50)   NOT NULL,
-    tamanho          DECIMAL(10,2) NOT NULL,
-    velocidade       DECIMAL(8,4)  NOT NULL,
-    altitude_orbital DECIMAL(10,2) NOT NULL,
-    risco_colisao    VARCHAR(30),
-    data_registro    DATE          NOT NULL,
-    CONSTRAINT TB_OBJETO_PK PRIMARY KEY (objeto_id),
+    objeto_id           INTEGER       GENERATED ALWAYS AS IDENTITY,
+    nome_objeto         VARCHAR(50)   NOT NULL,
+    categoria_objeto    VARCHAR(50)   NOT NULL,
+    status_objeto       VARCHAR(50)   NOT NULL,
+    tamanho             DECIMAL(10,2) NOT NULL,
+    velocidade_km       DECIMAL(8,4)  NOT NULL,
+    altitude_km_orbital DECIMAL(10,2) NOT NULL,
+    risco_colisao       VARCHAR(30)   NOT NULL,
+    data_registro       DATE          NOT NULL,
+    CONSTRAINT TB_OBJETO_PK 
+        PRIMARY KEY (objeto_id),
     CONSTRAINT TB_OBJETO_CATEGORIA_CHECK
-        CHECK(categoria_objeto in (
-            'fragmento orbital', 
-            'foguete', 'lixo_espacial', 
+        CHECK (categoria_objeto in (
+            'fragmento_orbital', 
+            'foguete', 
+            'lixo_espacial', 
             'meteorito', 
             'meteoro', 
             'satelite_artificial')),
     CONSTRAINT TB_OBJETO_STATUS_CHECK
-        CHECK(status_objeto in ('Interceptado', 'Rastreado')),
+        CHECK (status_objeto in ('interceptado', 'rastreado', 'nao_rastreado')),
     CONSTRAINT TB_OBJETO_RISCO_CHECK
-        CHECK(risco_colisao in ('alta', 'media', 'baixa', 'nula')),
-    CONSTRAINT TB_OBJETO_NOME_UK UNIQUE (nome_objeto)
+        CHECK (risco_colisao in ('alta', 'media', 'baixa', 'nula')),
+    CONSTRAINT TB_OBJETO_TAMANHO_CK
+        CHECK (tamanho > 0),
+    CONSTRAINT TB_OBJETO_VELOCIDADE_CK
+        CHECK (velocidade_km > 0),
+    CONSTRAINT TB_OBJETO_ALTITUDE_CK
+        CHECK (altitude_km_orbital >= 0),
+    CONSTRAINT TB_OBJETO_NOME_UK 
+        UNIQUE (nome_objeto)
 );
 
-DROP TABLE TB_OBJETO
-
 CREATE TABLE TB_RELATORIO (
-    id_relatorio        INTEGER      GENERATED ALWAYS AS IDENTITY,
-    titulo_relatorio    VARCHAR(100) NOT NULL,
-    descricao_relatorio VARCHAR(200) NOT NULL,
-    data_emissao        Date         NOT NULL,
-    tipo_relatorio      VARCHAR(100) NOT NULL,
-    usuario_id          INTEGER      NOT NULL,
-    objeto_id           INTEGER      NOT NULL,
-    CONSTRAINT TB_RELATORIO_PK PRIMARY KEY (id_relatorio),
+    id_relatorio        INTEGER        GENERATED ALWAYS AS IDENTITY,
+    titulo_relatorio    VARCHAR(100)   NOT NULL,
+    descricao_relatorio VARCHAR(200)   NOT NULL,
+    data_emissao        Date           NOT NULL,
+    tipo_relatorio      VARCHAR(100)   NOT NULL,
+    usuario_id          INTEGER        NOT NULL,
+    objeto_id           INTEGER        NOT NULL,
+    CONSTRAINT TB_RELATORIO_PK 
+        PRIMARY KEY (id_relatorio),
     CONSTRAINT TB_RELATORIO_USUARIO_FK
         FOREIGN KEY (usuario_id)
         REFERENCES TB_USUARIO (usuario_id),
     CONSTRAINT TB_RELATORIO_OBJETO_FK
         FOREIGN KEY (objeto_id)
         REFERENCES TB_OBJETO (objeto_id),
-    CONSTRAINT TB_RELATORIO_CHECK
+    CONSTRAINT TB_RELATORIO_TIPO_CHECK
         CHECK (tipo_relatorio IN (
             'operacional',
             'poluicao_espacial',
@@ -69,8 +81,6 @@ CREATE TABLE TB_RELATORIO (
         ))
 );
 
-DROP TABLE TB_RELATORIO
-
 CREATE TABLE TB_INICIATIVA_ESPACIAL (
     iniciativa_id     INTEGER      GENERATED ALWAYS AS IDENTITY,
     nome_iniciativa   VARCHAR(150) NOT NULL,
@@ -78,13 +88,12 @@ CREATE TABLE TB_INICIATIVA_ESPACIAL (
     area_atuacao      VARCHAR(50)  NOT NULL,
     data_inicio       DATE         NOT NULL,
     status_iniciativa VARCHAR(40)  NOT NULL,
-    CONSTRAINT TB_INICIATIVA_ESPACIAL PRIMARY KEY (iniciativa_id),
+    CONSTRAINT TB_INICIATIVA_ESPACIAL_PK
+        PRIMARY KEY (iniciativa_id),
     CONSTRAINT TB_INICIATIVA_CHECK
-        CHECK(status_iniciativa IN ('Ativa', 'inativa', 'em_analise')),
+        CHECK(status_iniciativa IN ('ativa', 'inativa', 'em_analise')),
     CONSTRAINT TB_INICIATIVA_NOME_UK UNIQUE (nome_iniciativa)
 );
-
-DROP TABLE TB_INICIATIVA_ESPACIAL
 
 CREATE TABLE TB_EMPRESA (
     empresa_id     INTEGER      GENERATED ALWAYS AS IDENTITY,
@@ -98,7 +107,6 @@ CREATE TABLE TB_EMPRESA (
     descricao      VARCHAR(500) NOT NULL,
     site_oficial   VARCHAR(350) NOT NULL,
     cnpj           VARCHAR(18)  NOT NULL,
-    score          INTEGER      NOT NULL,
     CONSTRAINT TB_EMPRESA_PK PRIMARY KEY (empresa_id),
     CONSTRAINT TB_EMPRESA_STATUS_CK
         CHECK (status_empresa IN (
@@ -106,22 +114,34 @@ CREATE TABLE TB_EMPRESA (
             'em_analise', 
             'nao_confiavel', 
             'suspeita')),
-    CONSTRAINT TB_EMPRESA_SCORE_CK
-        CHECK ( (score) >= 0),
-    CONSTRAINT TB_EMPRESA_CNPJ_UK  UNIQUE (cnpj),
-    CONSTRAINT TB_EMPRESA_EMAIL_UK UNIQUE (email_empresa),
-    CONSTRAINT TB_EMPRESA_SITE_UK  UNIQUE (site_oficial)
+    CONSTRAINT TB_EMPRESA_TIPO_CK 
+        CHECK (tipo_empresa IN (
+            'privada',
+            'governamental',
+            'universidade',
+            'agencia_espacial',
+            'ong'
+        )),
+    CONSTRAINT TB_EMPRESA_CNPJ_UK  
+        UNIQUE (cnpj),
+    CONSTRAINT TB_EMPRESA_EMAIL_UK 
+        UNIQUE (email_empresa),
+    CONSTRAINT TB_EMPRESA_SITE_UK 
+        UNIQUE (site_oficial),
+    CONSTRAINT TB_EMPRESA_TELEFONE_UK
+        UNIQUE (telefone)
 );
 
 CREATE TABLE TB_EMPRESA_INICIATIVA (
     empresa_id    INTEGER      NOT NULL,
     iniciativa_id INTEGER      NOT NULL,
     papel_empresa VARCHAR(100) NOT NULL,
-    CONSTRAINT TB_EMPRESA_INICIATIVA_PK PRIMARY KEY (empresa_id, iniciativa_id),
-    CONSTRAINT TB_EMPRESA_FK
+    CONSTRAINT TB_EMPRESA_INICIATIVA_PK 
+        PRIMARY KEY (empresa_id, iniciativa_id),
+    CONSTRAINT TB_EMPRESA_INICIATIVA_EMPRESA_FK
         FOREIGN KEY (empresa_id)
         REFERENCES TB_EMPRESA (empresa_id),
-    CONSTRAINT TB_EMPRESA_INICIATIVA_FK
+    CONSTRAINT TB_EMPRESA_INICIATIVA_INICIATIVA_FK
         FOREIGN KEY (iniciativa_id)
         REFERENCES TB_INICIATIVA_ESPACIAL (iniciativa_id)
 );
@@ -129,63 +149,79 @@ CREATE TABLE TB_EMPRESA_INICIATIVA (
 CREATE TABLE TB_SATELITE (
     satelite_id           INTEGER       GENERATED ALWAYS AS IDENTITY,
     finalidade            VARCHAR(100)  NOT NULL,
-    nome_satelite         VARCHAR(100)  NOT NULL,
     trajeto               VARCHAR(200)  NOT NULL,
-    altitude_km_orbital   DECIMAL(10,2) NOT NULL,
-    velocidade_km_orbital DECIMAL(8,4)  NOT NULL,
     data_lancamento       DATE          NOT NULL,
     tempo_de_vida         DATE          NOT NULL,
     tipo_orbita           VARCHAR(30)   NOT NULL,
     status_operacao       VARCHAR(30)   NOT NULL,
+    objeto_id             INTEGER       NOT NULL,
     empresa_id            INTEGER       NOT NULL,
-    CONSTRAINT TB_SATELITE PRIMARY KEY (satelite_id),
+    CONSTRAINT TB_SATELITE_PK 
+        PRIMARY KEY (satelite_id),
     CONSTRAINT TB_SATELITE_EMPRESA_FK
         FOREIGN KEY (empresa_id)
         REFERENCES TB_EMPRESA (empresa_id),
+    CONSTRAINT TB_SATELITE_OBJETO_FK
+        FOREIGN KEY (objeto_id)
+        REFERENCES TB_OBJETO (objeto_id),
     CONSTRAINT TB_SATELITE_TIPO_ORBITA_CK
         CHECK(tipo_orbita IN ('alta', 'media', 'baixa', 'geoestacionaria')),
     CONSTRAINT TB_SATELITE_STATUS_CK
         CHECK(status_operacao IN ('ativo', 'inativo')),
-    CONSTRAINT TB_SATELITE_NOME_UK UNIQUE (nome_satelite)
+    CONSTRAINT TB_SATELITE_OBJETO_UK
+        UNIQUE (objeto_id)
 );
 
-DROP TABLE TB_SATELITE
-
 CREATE TABLE TB_SCORE (
-    score_id    INTEGER      GENERATED ALWAYS AS IDENTITY,
-    penalidade  VARCHAR(100) NOT NULL,
-    bonificacao VARCHAR(100) NOT NULL,
-    empresa_id  INTEGER      NOT NULL,
-    satelite_id INTEGER      NOT NULL,
-    CONSTRAINT TB_SCORE_PK PRIMARY KEY (score_id),
+    score_id INTEGER GENERATED ALWAYS AS IDENTITY,
+    tipo_acao VARCHAR(20) NOT NULL,
+    descricao_acao VARCHAR(150) NOT NULL,
+    pontos_score INTEGER NOT NULL,
+    data_score Date NOT NULL,
+    empresa_id INTEGER NOT NULL,
+    CONSTRAINT TB_SCORE_PK 
+        PRIMARY KEY (score_id),
     CONSTRAINT TB_SCORE_EMPRESA_FK
         FOREIGN KEY (empresa_id)
         REFERENCES TB_EMPRESA (empresa_id),
-    CONSTRAINT TB_SOCRE_SATELITE
-        FOREIGN KEY (satelite_id)
-        REFERENCES TB_SATELITE (satelite_id),
-    CONSTRAINT TB_SCORE_BONIFICACAO_CK
-        CHECK (bonificacao IN (
-                'Desorbitacao responsavel',
-                'Baixo risco de colisao',
-                'Satelite ativo e regularizado',
-                'Plano de mitigacao aprovado',
-                'Baixa geracao de lixo espacial',
-                'Registro orbital regular',
-                'Transparencia de dados',
-                'Participacao em iniciativa sustentavel',
-                'Conformidade regulatoria')),
-    CONSTRAINT TB_SCORE_PENALIDADE_CK
-        CHECK (penalidade IN (
-                'Alto risco de colisao',
-                'Geracao de lixo espacial',
-                'Satelite sem plano de desorbitacao',
-                'Registro orbital irregular',
-                'Falta de transparencia',
-                'Geracao de fragmentos orbitais',
-                'Descumprimento regulatorio',
-                'Uso suspeito da infraestrutura espacial',
-                'Satelite inativo em orbita'))
+    CONSTRAINT TB_SCORE_TIPO_ACAO_CK
+        CHECK(tipo_acao IN ('bonificacao', 'penalidade')),
+    CONSTRAINT TB_SCORE_DESCRICAO_ACAO_CK
+        CHECK (
+            (
+                tipo_acao = 'bonificacao' AND descricao_acao IN (
+                    'desorbitacao_responsavel',
+                    'baixo_risco_de_colisao',
+                    'satelite_ativo_e_regularizado',
+                    'plano_de_mitigacao_aprovado',
+                    'baixa_geracao_de_lixo_espacial',
+                    'registro_orbital_regular',
+                    'transparencia_de_dados',
+                    'participacao_em_iniciativa_sustentavel',
+                    'conformidade_regulatoria'
+                )
+            )
+            OR
+            (
+                tipo_acao = 'penalidade' AND descricao_acao IN (
+                    'alto_risco_de_colisao',
+                    'geracao_de_lixo_espacial',
+                    'satelite_sem_plano_de_desorbitacao',
+                    'registro_orbital_irregular',
+                    'falta_de_transparencia',
+                    'geracao_de_fragmentos_orbitais',
+                    'descumprimento_regulatorio',
+                    'uso_suspeito_da_infraestrutura_espacial',
+                    'satelite_inativo_em_orbita'
+                )
+            )
+        ),
+    CONSTRAINT TB_SCORE_PONTOS_CK
+        CHECK(
+            (tipo_acao = 'bonificacao' AND pontos_score > 0) 
+            OR
+            (tipo_acao = 'penalidade' AND pontos_score < 0)
+        )
 );
 
 DROP TABLE TB_SCORE;

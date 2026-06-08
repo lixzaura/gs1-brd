@@ -110,6 +110,19 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="tipo_usuario" id="D14D04F4-08E4-3FE7-F20E-07F15AC8519F">
+<createdBy>wspot</createdBy>
+<createdTime>2026-06-05 20:28:49 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="26201A35-7066-D90E-AA08-ED1FB940671A" name="tb_usuario PK">

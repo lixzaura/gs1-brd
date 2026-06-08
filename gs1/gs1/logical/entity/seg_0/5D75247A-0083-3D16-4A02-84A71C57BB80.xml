@@ -40,19 +40,6 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nome_satelite" id="DA2B8D9D-8EAC-4FC4-0EC4-76C9051D0A1A">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 00:55:19 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="trajeto" id="8991DCCA-0B71-5C52-94AC-8281C2E1D526">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 00:55:41 UTC</createdTime>
@@ -65,58 +52,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="altitude_km_orbital" id="F1AFFB8A-00F6-4114-BFE0-AE26447BD1C5">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 00:55:51 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,10,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="velocidade_km_orbital" id="016C9DEE-04F0-F17C-2800-34AF81801235">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 00:56:06 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,8,4</ownDataTypeParameters>
-</Attribute>
-<Attribute name="data_lancamento" id="2A7E6A02-21B0-0500-0C32-B3E3DD21EC29">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 00:56:21 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="tempo_de_vida" id="11FFDC21-A7C5-21CB-E137-D005693CD097">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 00:56:32 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tipo_orbita" id="D1485F3B-1CC2-2FBA-B39C-A6EF70FE04FB">
 <createdBy>julia</createdBy>
@@ -153,6 +88,30 @@
 <valueDef value="Inativo" description=""/>
 </listOfValues>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_lancamento" id="2A7E6A02-21B0-0500-0C32-B3E3DD21EC29">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 00:56:21 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tempo_de_vida" id="11FFDC21-A7C5-21CB-E137-D005693CD097">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 00:56:32 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="empresa_id" id="3CCF4091-28BD-5DE9-D98D-E54AEA4E20E6">
 <createdBy>julia</createdBy>

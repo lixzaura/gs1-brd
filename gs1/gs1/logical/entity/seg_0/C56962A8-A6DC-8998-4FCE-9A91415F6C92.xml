@@ -66,18 +66,6 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="data_inicio" id="0E199AFA-319B-923C-33B9-9B29EF3B5BDD">
-<createdBy>julia</createdBy>
-<createdTime>2026-05-29 01:20:25 UTC</createdTime>
-<ownerDesignName>gs1</ownerDesignName>
-<engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="status_iniciativa" id="B2269034-9F13-3296-2924-7964091FA5F4">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:20:31 UTC</createdTime>
@@ -91,14 +79,27 @@
 <dataTypeSize>40</dataTypeSize>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="data_inicio" id="0E199AFA-319B-923C-33B9-9B29EF3B5BDD">
+<createdBy>julia</createdBy>
+<createdTime>2026-05-29 01:20:25 UTC</createdTime>
+<ownerDesignName>gs1</ownerDesignName>
+<engineerTo>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E3075D35-51F2-2E6E-17A8-CB996F3960EC" name="tb_iniciativa_espacial PK">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:21:24 UTC</createdTime>
 <ownerDesignName>gs1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
