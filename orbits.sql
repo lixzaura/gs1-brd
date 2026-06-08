@@ -90,7 +90,7 @@ CREATE TABLE TB_SATELITE (
 
 CREATE TABLE TB_OBJETO (
     objeto_id           INTEGER       GENERATED ALWAYS AS IDENTITY,
-    nome_objeto         VARCHAR(50)   NOT NULL,
+    nome_objeto         VARCHAR(100)   NOT NULL,
     categoria_objeto    VARCHAR(50)   NOT NULL,
     status_objeto       VARCHAR(50)   NOT NULL,
     tamanho             DECIMAL(10,2) NOT NULL,
@@ -98,6 +98,7 @@ CREATE TABLE TB_OBJETO (
     altitude_orbital    DECIMAL(10,2) NOT NULL,
     risco_colisao       VARCHAR(30)   NOT NULL,
     data_registro       DATE          NOT NULL,
+    satelite_id         INTEGER       NOT NULL,
     CONSTRAINT TB_OBJETO_PK 
         PRIMARY KEY (objeto_id),
     CONSTRAINT TB_SATELITE_FK
