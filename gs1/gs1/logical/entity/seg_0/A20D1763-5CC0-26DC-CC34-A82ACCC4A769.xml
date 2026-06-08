@@ -103,6 +103,13 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="agencia_espacial" description=""/>
+<valueDef value="governamental" description=""/>
+<valueDef value="ong" description=""/>
+<valueDef value="privada" description=""/>
+<valueDef value="universidade" description=""/>
+</listOfValues>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="status_empresa" id="02F89693-3457-B34E-3AD9-0B13E00EB077">
@@ -117,12 +124,12 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
 <listOfValues>
-<valueDef value="Confiável" description=""/>
-<valueDef value="Em Análise" description=""/>
-<valueDef value="Não confiável" description=""/>
-<valueDef value="Suspeita" description=""/>
+<valueDef value="confiavel" description=""/>
+<valueDef value="em_analise" description=""/>
+<valueDef value="nao_confiavel" description=""/>
+<valueDef value="suspeita" description=""/>
 </listOfValues>
-<defaultValue>Em Análise</defaultValue>
+<defaultValue>em_analise</defaultValue>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="telefone" id="91EA1E14-64E1-613F-D946-DE2FCF94D0C7">

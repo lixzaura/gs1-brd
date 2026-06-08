@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_relatorio" id="A9E5F0A5-0EB1-978B-2ED6-3DC33AF0505C">
+<Column name="relatorio_id" id="A9E5F0A5-0EB1-978B-2ED6-3DC33AF0505C">
 <createdBy>wspot</createdBy>
 <createdTime>2026-06-05 20:32:26 UTC</createdTime>
 <generatorID>64A86983-14D9-363E-CE7F-7AEAD5F081A1</generatorID>
@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TB_USUARIO_usuario_id" id="56C37305-49B5-0BF2-DDD1-083AB4C775CE">
+<Column name="usuario_id" id="56C37305-49B5-0BF2-DDD1-083AB4C775CE">
 <createdBy>wspot</createdBy>
 <createdTime>2026-06-05 20:32:26 UTC</createdTime>
 <generatorID>16CF1D25-9A06-4588-16E0-0C6F7932FBB2</generatorID>
@@ -34,7 +34,7 @@
 <colAssociation fkAssociation="23C7380E-D2D4-A62A-327D-74B0EAC9F27C" referredColumn="9124B776-EADB-FC96-6A85-1C5565229DFB"/>
 </associations>
 </Column>
-<Column name="TB_OBJETO_objeto_id" id="0448E54D-DFDC-8ECA-2D05-2D5325C4CB20">
+<Column name="objeto_id" id="0448E54D-DFDC-8ECA-2D05-2D5325C4CB20">
 <createdBy>wspot</createdBy>
 <createdTime>2026-06-05 20:32:26 UTC</createdTime>
 <generatorID>9E3F4DF5-6580-82F1-20DD-B371B5BDAF77</generatorID>
@@ -82,6 +82,18 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="conformidade" description=""/>
+<valueDef value="desempenho" description=""/>
+<valueDef value="geral" description=""/>
+<valueDef value="incidente" description=""/>
+<valueDef value="manutencao" description=""/>
+<valueDef value="operacional" description=""/>
+<valueDef value="poluicao_espacial" description=""/>
+<valueDef value="risco_colisao" description=""/>
+<valueDef value="status_orbital" description=""/>
+</listOfValues>
+<defaultValue>geral</defaultValue>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

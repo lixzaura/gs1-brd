@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_relatorio " id="64A86983-14D9-363E-CE7F-7AEAD5F081A1">
+<Attribute name="relatorio_id" id="64A86983-14D9-363E-CE7F-7AEAD5F081A1">
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:23:17 UTC</createdTime>
 <ownerDesignName>gs1</ownerDesignName>
@@ -92,6 +92,18 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="conformidade" description=""/>
+<valueDef value="desempenho" description=""/>
+<valueDef value="geral" description=""/>
+<valueDef value="incidente" description=""/>
+<valueDef value="manutencao" description=""/>
+<valueDef value="operacional" description=""/>
+<valueDef value="poluicao_espacial" description=""/>
+<valueDef value="risco_colisao" description=""/>
+<valueDef value="status_orbital" description=""/>
+</listOfValues>
+<defaultValue>geral</defaultValue>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_emissao" id="8F95C863-8AEF-2CC0-7F95-1B96234FE1AB">
@@ -112,8 +124,9 @@
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:23:36 UTC</createdTime>
 <ownerDesignName>gs1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -88,6 +88,13 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="agencia_espacial" description=""/>
+<valueDef value="governamental" description=""/>
+<valueDef value="ong" description=""/>
+<valueDef value="privada" description=""/>
+<valueDef value="universidade" description=""/>
+</listOfValues>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -101,12 +108,12 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
 <listOfValues>
-<valueDef value="Confiável" description=""/>
-<valueDef value="Em Análise" description=""/>
-<valueDef value="Não confiável" description=""/>
-<valueDef value="Suspeita" description=""/>
+<valueDef value="confiavel" description=""/>
+<valueDef value="em_analise" description=""/>
+<valueDef value="nao_confiavel" description=""/>
+<valueDef value="suspeita" description=""/>
 </listOfValues>
-<defaultValue>Em Análise</defaultValue>
+<defaultValue>em_analise</defaultValue>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

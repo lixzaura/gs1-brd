@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TB_SATELITE_satelite_id" id="0FF27611-3E03-C0AC-4830-BCE3912691C6">
+<Column name="satelite_id" id="0FF27611-3E03-C0AC-4830-BCE3912691C6">
 <createdBy>wspot</createdBy>
 <createdTime>2026-06-05 20:32:26 UTC</createdTime>
 <generatorID>651B645C-193E-7CE7-E406-EEA2E2F6A958</generatorID>

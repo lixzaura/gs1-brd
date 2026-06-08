@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="iniciativa__id" id="6BB23B4D-1961-2579-76F1-318223A820CF">
+<Column name="iniciativa_id" id="6BB23B4D-1961-2579-76F1-318223A820CF">
 <createdBy>wspot</createdBy>
 <createdTime>2026-06-05 20:32:26 UTC</createdTime>
 <generatorID>AD6401D2-1833-A48E-69BF-970BA8384DAB</generatorID>
@@ -64,6 +64,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<listOfValues>
+<valueDef value="ativa" description=""/>
+<valueDef value="em_analise" description=""/>
+<valueDef value="inativa" description=""/>
+</listOfValues>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

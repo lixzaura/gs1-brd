@@ -77,6 +77,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<listOfValues>
+<valueDef value="ativa" description=""/>
+<valueDef value="em_analise" description=""/>
+<valueDef value="inativa" description=""/>
+</listOfValues>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_inicio" id="0E199AFA-319B-923C-33B9-9B29EF3B5BDD">

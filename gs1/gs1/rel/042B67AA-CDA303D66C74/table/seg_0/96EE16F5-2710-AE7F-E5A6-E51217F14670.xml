@@ -105,6 +105,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="administrador" description=""/>
+<valueDef value="comum" description=""/>
+</listOfValues>
+<defaultValue>comum</defaultValue>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TB_EMPRESA_empresa_id" id="F30E0B6D-7BFA-D608-535A-72AD27A0E1D5">
+<Column name="empresa_id" id="F30E0B6D-7BFA-D608-535A-72AD27A0E1D5">
 <createdBy>wspot</createdBy>
 <createdTime>2026-06-05 20:32:26 UTC</createdTime>
 <generatorID>C38EC8C2-E238-E472-EB99-7FC8A7C84ACB</generatorID>
@@ -54,6 +54,26 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="alto_risco_de_colisao" description=""/>
+<valueDef value="baixa_geracao_de_lixo_espacial" description=""/>
+<valueDef value="baixo_risco_de_colisao" description=""/>
+<valueDef value="conformidade_regulatoria" description=""/>
+<valueDef value="descumprimento_regulatorio" description=""/>
+<valueDef value="desorbitacao_responsavel" description=""/>
+<valueDef value="falta_de_transparencia" description=""/>
+<valueDef value="geracao_de_fragmentos_orbitais" description=""/>
+<valueDef value="geracao_de_lixo_espacial" description=""/>
+<valueDef value="participacao_em_iniciativa_sustentavel" description=""/>
+<valueDef value="plano_de_mitigacao_aprovado" description=""/>
+<valueDef value="registro_orbital_irregular" description=""/>
+<valueDef value="registro_orbital_regular" description=""/>
+<valueDef value="satelite_ativo_e_regularizado" description=""/>
+<valueDef value="satelite_inativo_em_orbita" description=""/>
+<valueDef value="satelite_sem_plano_de_desorbitacao" description=""/>
+<valueDef value="transparencia_de_dados" description=""/>
+<valueDef value="uso_suspeito_da_infraestrutura_espacial" description=""/>
+</listOfValues>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -66,6 +86,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="bonificacao" description=""/>
+<valueDef value="penalidade" description=""/>
+</listOfValues>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

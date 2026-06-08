@@ -64,6 +64,26 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="alto_risco_de_colisao" description=""/>
+<valueDef value="baixa_geracao_de_lixo_espacial" description=""/>
+<valueDef value="baixo_risco_de_colisao" description=""/>
+<valueDef value="conformidade_regulatoria" description=""/>
+<valueDef value="descumprimento_regulatorio" description=""/>
+<valueDef value="desorbitacao_responsavel" description=""/>
+<valueDef value="falta_de_transparencia" description=""/>
+<valueDef value="geracao_de_fragmentos_orbitais" description=""/>
+<valueDef value="geracao_de_lixo_espacial" description=""/>
+<valueDef value="participacao_em_iniciativa_sustentavel" description=""/>
+<valueDef value="plano_de_mitigacao_aprovado" description=""/>
+<valueDef value="registro_orbital_irregular" description=""/>
+<valueDef value="registro_orbital_regular" description=""/>
+<valueDef value="satelite_ativo_e_regularizado" description=""/>
+<valueDef value="satelite_inativo_em_orbita" description=""/>
+<valueDef value="satelite_sem_plano_de_desorbitacao" description=""/>
+<valueDef value="transparencia_de_dados" description=""/>
+<valueDef value="uso_suspeito_da_infraestrutura_espacial" description=""/>
+</listOfValues>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tipo_acao" id="7AA6F7EB-046E-8005-1A68-994080A97169">
@@ -77,6 +97,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="bonificacao" description=""/>
+<valueDef value="penalidade" description=""/>
+</listOfValues>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_score" id="02451E65-67E0-6E0C-1357-4C840EB3B1D1">
@@ -97,8 +121,9 @@
 <createdBy>julia</createdBy>
 <createdTime>2026-05-29 01:11:48 UTC</createdTime>
 <ownerDesignName>gs1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="true"/>
+<item key="042B67AA-0394-03F4-1A6B-CDA303D66C74" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
